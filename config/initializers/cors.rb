@@ -8,7 +8,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   end
 
   allow do
-    origins 'http://jdh-react-auth-app.herokuapp.com'
+    origins 'https://git.heroku.com/ceutracker-react-frontend.git'
 
     resource '*',
       headers: :any,

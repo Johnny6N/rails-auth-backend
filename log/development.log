@@ -2573,3 +2573,1068 @@ Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 2428)
 Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.7ms | Allocations: 19105)
 
 
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:29:34 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:29:34 -0400
+Processing by UsstatesController#index as JSON
+  Rendering usstates/index.json.jbuilder
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUsstate Load (1.6ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 103)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 1.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  [1m[36mUser Load (8.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 8.3ms | Allocations: 4604)
+
+
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 61.7ms | Allocations: 18539)
+Completed 200 OK in 63ms (Views: 61.1ms | ActiveRecord: 1.6ms | Allocations: 18896)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:30:22 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:30:22 -0400
+Processing by UsstatesController#index as JSON
+Processing by SessionsController#logged_in as HTML
+  Rendering usstates/index.json.jbuilder
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 1037)
+
+
+  [1m[36mUsstate Load (1.5ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 103)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 40.3ms | Allocations: 18099)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 1.5ms | Allocations: 18740)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:30:44 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:30:44 -0400
+Processing by UsstatesController#index as JSON
+  Rendering usstates/index.json.jbuilder
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUsstate Load (2.6ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 103)
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 13ms (Views: 0.6ms | ActiveRecord: 4.5ms | Allocations: 2756)
+
+
+  Rendered usstates/_usstate.json.jbuilder (Duration: 1.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.9ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.6ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 16.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.6ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 1.9ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 99.1ms | Allocations: 18763)
+Completed 200 OK in 101ms (Views: 97.5ms | ActiveRecord: 2.6ms | Allocations: 19134)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:31:29 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:31:29 -0400
+Processing by UsstatesController#index as JSON
+Processing by SessionsController#logged_in as HTML
+  Rendering usstates/index.json.jbuilder
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 1042)
+
+
+  [1m[36mUsstate Load (1.9ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 103)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 18.8ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 59.8ms | Allocations: 18099)
+Completed 200 OK in 61ms (Views: 59.1ms | ActiveRecord: 1.9ms | Allocations: 18743)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:31:46 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:31:46 -0400
+Processing by SessionsController#logged_in as HTML
+Processing by UsstatesController#index as JSON
+  Rendering usstates/index.json.jbuilder
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 1349)
+
+
+  [1m[36mUsstate Load (1.3ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 103)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 34.0ms | Allocations: 18063)
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 1.3ms | Allocations: 18451)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:32:16 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:32:16 -0400
+Processing by UsstatesController#index as JSON
+Processing by SessionsController#logged_in as HTML
+  Rendering usstates/index.json.jbuilder
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 1036)
+
+
+  [1m[36mUsstate Load (1.4ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 103)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 35.5ms | Allocations: 18092)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 1.4ms | Allocations: 18727)
+
+
+Started GET "/usstates/40" for ::1 at 2020-04-14 08:37:50 -0400
+Processing by UsstatesController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUsstate Load (0.4ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates" WHERE "usstates"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/usstates_controller.rb:70:in `set_usstate'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 1050)
+
+
+Started GET "/usstates/1" for ::1 at 2020-04-14 08:37:57 -0400
+Processing by UsstatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsstate Load (0.2ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates" WHERE "usstates"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usstates_controller.rb:70:in `set_usstate'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 844)
+
+
+Started GET "/usstates" for ::1 at 2020-04-14 08:38:03 -0400
+Processing by UsstatesController#index as HTML
+  Rendering usstates/index.html.erb within layouts/application
+  [1m[36mUsstate Load (0.4ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.html.erb:18
+  Rendered usstates/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 7928)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.4ms | Allocations: 12002)
+
+
+Started GET "/usstates.37" for ::1 at 2020-04-14 08:39:07 -0400
+Processing by UsstatesController#index as 
+  Rendering usstates/index.html.erb within layouts/application
+  [1m[36mUsstate Load (0.4ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.html.erb:18
+  Rendered usstates/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 7920)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.4ms | Allocations: 12165)
+
+
+Started GET "/usstates/37" for ::1 at 2020-04-14 08:39:14 -0400
+Processing by UsstatesController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mUsstate Load (0.3ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates" WHERE "usstates"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/usstates_controller.rb:70:in `set_usstate'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 848)
+
+
+Started GET "/usstates" for ::1 at 2020-04-14 08:39:18 -0400
+Processing by UsstatesController#index as HTML
+  Rendering usstates/index.html.erb within layouts/application
+  [1m[36mUsstate Load (0.4ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.html.erb:18
+  Rendered usstates/index.html.erb within layouts/application (Duration: 19.7ms | Allocations: 7920)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.4ms | Allocations: 11997)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:41:36 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:41:36 -0400
+Processing by UsstatesController#index as JSON
+  Rendering usstates/index.json.jbuilder
+  [1m[36mUsstate Load (0.9ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 103)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+Processing by SessionsController#logged_in as HTML
+  Rendered usstates/index.json.jbuilder (Duration: 59.4ms | Allocations: 19364)
+Completed 200 OK in 62ms (Views: 59.2ms | ActiveRecord: 0.9ms | Allocations: 19994)
+
+
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 11.1ms | Allocations: 5746)
+
+
+Started DELETE "/usstates.json/[object%20Object]" for ::1 at 2020-04-14 08:41:51 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/usstates.json/[object%20Object]"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/usstates/arizona" for ::1 at 2020-04-14 08:42:36 -0400
+Processing by UsstatesController#show as HTML
+  Parameters: {"id"=>"arizona"}
+  [1m[36mUsstate Load (0.3ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates" WHERE "usstates"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/usstates_controller.rb:70:in `set_usstate'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1167)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Usstate with 'id'=arizona):
+  
+app/controllers/usstates_controller.rb:70:in `set_usstate'
+Started GET "/usstates/1" for ::1 at 2020-04-14 08:43:06 -0400
+Processing by UsstatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsstate Load (0.3ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates" WHERE "usstates"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usstates_controller.rb:70:in `set_usstate'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 842)
+
+
+Started GET "/usstates" for ::1 at 2020-04-14 08:43:11 -0400
+Processing by UsstatesController#index as HTML
+  Rendering usstates/index.html.erb within layouts/application
+  [1m[36mUsstate Load (0.5ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.html.erb:18
+  Rendered usstates/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 7922)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.5ms | Allocations: 11998)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:44:03 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:44:03 -0400
+Processing by UsstatesController#index as JSON
+  Rendering usstates/index.json.jbuilder
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUsstate Load (0.7ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 103)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.2ms | Allocations: 2764)
+
+
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 48.6ms | Allocations: 18376)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.7ms | Allocations: 19100)
+
+
+Started DELETE "/usstates.json/[object%20Object]" for ::1 at 2020-04-14 08:44:13 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/usstates.json/[object%20Object]"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:44:56 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:44:56 -0400
+Processing by UsstatesController#index as JSON
+Processing by SessionsController#logged_in as HTML
+  Rendering usstates/index.json.jbuilder
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 1036)
+
+
+  [1m[36mUsstate Load (1.5ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 103)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.6ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 55.1ms | Allocations: 18100)
+Completed 200 OK in 57ms (Views: 55.0ms | ActiveRecord: 1.5ms | Allocations: 18736)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:45:13 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:45:13 -0400
+Processing by UsstatesController#index as JSON
+  Rendering usstates/index.json.jbuilder
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUsstate Load (5.8ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 103)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.7ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.6ms | Allocations: 93)
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 22ms (Views: 0.4ms | ActiveRecord: 4.0ms | Allocations: 5140)
+
+
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.6ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 59.0ms | Allocations: 18538)
+Completed 200 OK in 62ms (Views: 55.5ms | ActiveRecord: 5.8ms | Allocations: 19120)
+
+
+Started GET "/usstates/id=37" for ::1 at 2020-04-14 08:47:23 -0400
+Processing by UsstatesController#show as HTML
+  Parameters: {"id"=>"id=37"}
+  [1m[36mUsstate Load (0.2ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates" WHERE "usstates"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/usstates_controller.rb:70:in `set_usstate'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1145)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Usstate with 'id'=id=37):
+  
+app/controllers/usstates_controller.rb:70:in `set_usstate'
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:49:20 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:49:20 -0400
+Processing by UsstatesController#index as JSON
+Processing by SessionsController#logged_in as HTML
+  Rendering usstates/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+  [1m[36mUsstate Load (1.4ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 1061)
+
+
+  ↳ app/views/usstates/index.json.jbuilder:1
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 103)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 38.3ms | Allocations: 18096)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 1.4ms | Allocations: 18735)
+
+
+Started DELETE "/usstates.json/[object%20Object].json" for ::1 at 2020-04-14 08:49:33 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/usstates.json/[object%20Object].json"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:49:50 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:49:50 -0400
+Processing by UsstatesController#index as JSON
+  Rendering usstates/index.json.jbuilder
+  [1m[36mUsstate Load (0.4ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+Processing by SessionsController#logged_in as HTML
+  ↳ app/views/usstates/index.json.jbuilder:1
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 103)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 2194)
+
+
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 40.2ms | Allocations: 18765)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.4ms | Allocations: 19126)
+
+
+Started DELETE "/usstates/[object%20Object].json" for ::1 at 2020-04-14 08:50:00 -0400
+Processing by UsstatesController#destroy as JSON
+  Parameters: {"id"=>"[object Object]"}
+  [1m[36mUsstate Load (0.2ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates" WHERE "usstates"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/usstates_controller.rb:70:in `set_usstate'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 1004)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Usstate with 'id'=[object Object]):
+  
+app/controllers/usstates_controller.rb:70:in `set_usstate'
+Started GET "/usstates/1.json" for ::1 at 2020-04-14 08:50:19 -0400
+Processing by UsstatesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUsstate Load (0.2ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates" WHERE "usstates"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usstates_controller.rb:70:in `set_usstate'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 843)
+
+
+Started GET "/usstates" for ::1 at 2020-04-14 08:50:26 -0400
+Processing by UsstatesController#index as HTML
+  Rendering usstates/index.html.erb within layouts/application
+  [1m[36mUsstate Load (0.4ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.html.erb:18
+  Rendered usstates/index.html.erb within layouts/application (Duration: 20.1ms | Allocations: 7920)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.4ms | Allocations: 11996)
+
+
+Started GET "/usstates" for ::1 at 2020-04-14 08:55:55 -0400
+  
+ArgumentError (Invalid route name, already in use: 'root' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+https://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  
+config/routes.rb:11:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/usstates" for ::1 at 2020-04-14 08:56:18 -0400
+Processing by UsstatesController#index as HTML
+  Rendering usstates/index.html.erb within layouts/application
+  [1m[36mUsstate Load (0.9ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.html.erb:18
+  Rendered usstates/index.html.erb within layouts/application (Duration: 16.1ms | Allocations: 12639)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 83ms (Views: 79.2ms | ActiveRecord: 0.9ms | Allocations: 31372)
+
+
