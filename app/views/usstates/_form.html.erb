@@ -1,0 +1,42 @@
+<%= form_with(model: usstate, local: true) do |form| %>
+  <% if usstate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(usstate.errors.count, "error") %> prohibited this usstate from being saved:</h2>
+
+      <ul>
+        <% usstate.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hours %>
+    <%= form.text_field :hours %>
+  </div>
+
+  <div class="field">
+    <%= form.label :periodicity %>
+    <%= form.text_field :periodicity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :conditions %>
+    <%= form.text_field :conditions %>
+  </div>
+
+  <div class="field">
+    <%= form.label :link %>
+    <%= form.text_field :link %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

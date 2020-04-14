@@ -542,3 +542,2034 @@ Processing by SessionsController#logged_in as HTML
 Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 302)
 
 
+Started GET "/" for ::1 at 2020-04-13 18:06:41 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#home as HTML
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 430)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 18:07:01 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 4.4ms | Allocations: 5491)
+
+
+Started POST "/sessions" for ::1 at 2020-04-13 18:07:14 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "new1@new.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 255ms (Views: 1.2ms | ActiveRecord: 0.5ms | Allocations: 1700)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 18:07:20 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 962)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 18:51:21 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 1.1ms | Allocations: 1037)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 18:58:01 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 22ms (Views: 0.6ms | ActiveRecord: 10.3ms | Allocations: 1042)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 19:11:07 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 1034)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 19:18:36 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 1031)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 19:19:24 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 951)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 19:22:16 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 943)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 19:22:24 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 950)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 19:24:05 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 944)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 20:18:15 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 1.7ms | Allocations: 1034)
+
+
+Started DELETE "/logout" for ::1 at 2020-04-13 20:18:20 -0400
+Processing by SessionsController#logout as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 855)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 20:19:08 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 308)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 20:19:54 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 309)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 20:20:42 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 306)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 20:21:44 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 310)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 20:21:57 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 309)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 20:22:16 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 311)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 20:22:38 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 306)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 20:23:23 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 306)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 20:26:34 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 307)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 20:31:02 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 304)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 20:31:31 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 311)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 20:38:56 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 308)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 20:39:45 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 306)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:08:55 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 307)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:10:53 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 302)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:12:05 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 307)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:12:15 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 305)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:13:39 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 305)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:17:43 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 306)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:18:32 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 305)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:20:25 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 304)
+
+
+Started POST "/sessions" for ::1 at 2020-04-13 23:21:04 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "new1@new.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 242ms (Views: 0.5ms | ActiveRecord: 0.6ms | Allocations: 1113)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:21:24 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 954)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:22:12 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 952)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:24:34 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 947)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:25:24 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 951)
+
+
+Started DELETE "/logout" for ::1 at 2020-04-13 23:26:25 -0400
+Processing by SessionsController#logout as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 852)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:31:07 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 307)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:31:42 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 308)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:32:30 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 306)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:33:56 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 302)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:34:45 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 305)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:36:55 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 303)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:37:13 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 307)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:37:49 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 306)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:38:13 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 307)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:39:09 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 306)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-13 23:39:28 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 306)
+
+
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2662186263809704485)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsstates (20200414040230)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (30.9ms)[0m  [1m[35mCREATE TABLE "usstates" ("id" bigserial primary key, "name" character varying, "hours" float, "periodicity" character varying, "conditions" character varying, "link" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200414040230"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateClients (20200414040405)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "clients" ("id" bigserial primary key, "f_name" character varying, "l_name" character varying, "birth_month" character varying, "birth_day" character varying, "birth_year" character varying, "license" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200414040405"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (9.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2662186263809704485)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (2.1ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alabama"], ["hours", 10.0], ["periodicity", "Yearly"], ["conditions", "Must complete 2 hours jurisprudence every 5 years between years ending in 0 or 5."], ["link", "https://www.continuingeducation.com/physical-therapy/state-ce-requirements/alabama"], ["created_at", "2020-04-14 04:20:01.592835"], ["updated_at", "2020-04-14 04:20:01.592835"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alaska"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.599124"], ["updated_at", "2020-04-14 04:20:01.599124"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Arizona"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.602880"], ["updated_at", "2020-04-14 04:20:01.602880"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Arkasnas"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.606663"], ["updated_at", "2020-04-14 04:20:01.606663"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "California"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.610206"], ["updated_at", "2020-04-14 04:20:01.610206"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Colorado"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.613662"], ["updated_at", "2020-04-14 04:20:01.613662"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Connecticut"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.617164"], ["updated_at", "2020-04-14 04:20:01.617164"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Delaware"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.621054"], ["updated_at", "2020-04-14 04:20:01.621054"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.4ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "District of Columbia"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.636438"], ["updated_at", "2020-04-14 04:20:01.636438"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Florida"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.640740"], ["updated_at", "2020-04-14 04:20:01.640740"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (15.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (1.0ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Georgia"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.645621"], ["updated_at", "2020-04-14 04:20:01.645621"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Hawaii"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.666703"], ["updated_at", "2020-04-14 04:20:01.666703"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Idaho"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.670816"], ["updated_at", "2020-04-14 04:20:01.670816"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Illinois"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.674898"], ["updated_at", "2020-04-14 04:20:01.674898"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Indiana"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.678401"], ["updated_at", "2020-04-14 04:20:01.678401"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Iowa"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.687696"], ["updated_at", "2020-04-14 04:20:01.687696"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Kansas"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.698130"], ["updated_at", "2020-04-14 04:20:01.698130"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Kentucky"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.706831"], ["updated_at", "2020-04-14 04:20:01.706831"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Louisiana"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.716440"], ["updated_at", "2020-04-14 04:20:01.716440"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Maine"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.726435"], ["updated_at", "2020-04-14 04:20:01.726435"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Maryland"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.736678"], ["updated_at", "2020-04-14 04:20:01.736678"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Massachusetts"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.752064"], ["updated_at", "2020-04-14 04:20:01.752064"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Michigan"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.755709"], ["updated_at", "2020-04-14 04:20:01.755709"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Minnesota"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.759299"], ["updated_at", "2020-04-14 04:20:01.759299"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Mississippi"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.763190"], ["updated_at", "2020-04-14 04:20:01.763190"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Missouri"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.766928"], ["updated_at", "2020-04-14 04:20:01.766928"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Montana"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.770284"], ["updated_at", "2020-04-14 04:20:01.770284"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Nebraska"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.773529"], ["updated_at", "2020-04-14 04:20:01.773529"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Nevada"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.776763"], ["updated_at", "2020-04-14 04:20:01.776763"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "New Hampshire"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.780376"], ["updated_at", "2020-04-14 04:20:01.780376"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "New Jersey"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.784060"], ["updated_at", "2020-04-14 04:20:01.784060"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "New Mexico"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.787547"], ["updated_at", "2020-04-14 04:20:01.787547"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "New York"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.790898"], ["updated_at", "2020-04-14 04:20:01.790898"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.4ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "North Carolina"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.794308"], ["updated_at", "2020-04-14 04:20:01.794308"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.6ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "North Dakota"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.798450"], ["updated_at", "2020-04-14 04:20:01.798450"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Ohio"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.802288"], ["updated_at", "2020-04-14 04:20:01.802288"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Oklahoma"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.805688"], ["updated_at", "2020-04-14 04:20:01.805688"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Oregon"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.809473"], ["updated_at", "2020-04-14 04:20:01.809473"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Pennsylvania"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.813465"], ["updated_at", "2020-04-14 04:20:01.813465"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Puerto Rico"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.817471"], ["updated_at", "2020-04-14 04:20:01.817471"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Rhode Island"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.821310"], ["updated_at", "2020-04-14 04:20:01.821310"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "South Carolina"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.824776"], ["updated_at", "2020-04-14 04:20:01.824776"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "South Dakota"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.828227"], ["updated_at", "2020-04-14 04:20:01.828227"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Tennessee"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.832128"], ["updated_at", "2020-04-14 04:20:01.832128"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Texas"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.835623"], ["updated_at", "2020-04-14 04:20:01.835623"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Utah"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.839006"], ["updated_at", "2020-04-14 04:20:01.839006"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Vermont"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.842459"], ["updated_at", "2020-04-14 04:20:01.842459"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.3ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Virginia"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.846935"], ["updated_at", "2020-04-14 04:20:01.846935"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Washington"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.850609"], ["updated_at", "2020-04-14 04:20:01.850609"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "West Virginia"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.854090"], ["updated_at", "2020-04-14 04:20:01.854090"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Wisconsin"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.857467"], ["updated_at", "2020-04-14 04:20:01.857467"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsstate Create (0.2ms)[0m  [1m[32mINSERT INTO "usstates" ("name", "hours", "periodicity", "conditions", "link", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Wyoming"], ["hours", 24.0], ["periodicity", "Yearly"], ["conditions", "If licensed 12 months or more. If less then 12 months, 12 hours required."], ["link", "https://www.commerce.alaska.gov/web/portals/5/pub/PT-OTStatutes.pdf#AAC54400"], ["created_at", "2020-04-14 04:20:01.861082"], ["updated_at", "2020-04-14 04:20:01.861082"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2662186263809704485)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCeus (20200414043746)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "ceus" ("id" bigserial primary key, "title" character varying, "number" character varying, "hours" float, "state" character varying, "instructor_name" character varying, "provider_name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200414043746"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2662186263809704485)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2662186263809704485)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMaps (20200414043941)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE "maps" ("id" bigserial primary key, "clients_id" bigint NOT NULL, "usstates_id" bigint NOT NULL, "ceus_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_9035b20dff"
+FOREIGN KEY ("clients_id")
+  REFERENCES "clients" ("id")
+, CONSTRAINT "fk_rails_f566e46caa"
+FOREIGN KEY ("usstates_id")
+  REFERENCES "usstates" ("id")
+, CONSTRAINT "fk_rails_6a82fe585c"
+FOREIGN KEY ("ceus_id")
+  REFERENCES "ceus" ("id")
+)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_maps_on_clients_id" ON "maps"  ("clients_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_maps_on_usstates_id" ON "maps"  ("usstates_id")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_maps_on_ceus_id" ON "maps"  ("ceus_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200414043941"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2662186263809704485)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUsstate Load (0.7ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates" WHERE "usstates"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+Started GET "/logged_in" for ::1 at 2020-04-14 01:05:18 -0400
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 354)
+
+
+Started POST "/sessions" for ::1 at 2020-04-14 01:06:16 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "new1@new.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 271ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 7571)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:07:41 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1055)
+
+
+Started DELETE "/logout" for ::1 at 2020-04-14 01:07:49 -0400
+Processing by SessionsController#logout as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 855)
+
+
+Started POST "/sessions" for ::1 at 2020-04-14 01:08:00 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "new1@new.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 263ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 1032)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:09:04 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 951)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:09:17 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 952)
+
+
+Started DELETE "/logout" for ::1 at 2020-04-14 01:09:24 -0400
+Processing by SessionsController#logout as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 854)
+
+
+Started POST "/sessions" for ::1 at 2020-04-14 01:09:29 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "new1@new.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 260ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 1034)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:11:31 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 954)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:12:20 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 953)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:13:51 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 948)
+
+
+Started DELETE "/logout" for ::1 at 2020-04-14 01:13:55 -0400
+Processing by SessionsController#logout as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 852)
+
+
+Started POST "/sessions" for ::1 at 2020-04-14 01:14:07 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "new1@new.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 245ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 1031)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:16:09 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 953)
+
+
+Started DELETE "/logout" for ::1 at 2020-04-14 01:16:11 -0400
+Processing by SessionsController#logout as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 856)
+
+
+Started POST "/sessions" for ::1 at 2020-04-14 01:16:21 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "new1@new.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 270ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 1031)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:17:37 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 948)
+
+
+Started DELETE "/logout" for ::1 at 2020-04-14 01:17:40 -0400
+Processing by SessionsController#logout as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 851)
+
+
+Started POST "/sessions" for ::1 at 2020-04-14 01:17:50 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "new1@new.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 259ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 1031)
+
+
+Started DELETE "/logout" for ::1 at 2020-04-14 01:17:55 -0400
+Processing by SessionsController#logout as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 851)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:23:36 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 311)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:23:56 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 307)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:24:02 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 303)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:24:54 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 306)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:26:03 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 308)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:27:24 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 308)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:27:43 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 308)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:28:25 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 309)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:30:43 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 302)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:33:14 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 307)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:34:41 -0400
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 305)
+
+
+Started POST "/sessions" for ::1 at 2020-04-14 01:34:50 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "new1@new.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 261ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 1033)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:35:53 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 950)
+
+
+Started DELETE "/logout" for ::1 at 2020-04-14 01:35:56 -0400
+Processing by SessionsController#logout as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 850)
+
+
+Started POST "/sessions" for ::1 at 2020-04-14 01:36:02 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "new1@new.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 253ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 1032)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:36:20 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 949)
+
+
+Started DELETE "/logout" for ::1 at 2020-04-14 01:36:22 -0400
+Processing by SessionsController#logout as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 853)
+
+
+Started POST "/sessions" for ::1 at 2020-04-14 01:36:29 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "new1@new.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 270ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 1028)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:36:54 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 950)
+
+
+Started DELETE "/logout" for ::1 at 2020-04-14 01:36:56 -0400
+Processing by SessionsController#logout as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 851)
+
+
+Started POST "/sessions" for ::1 at 2020-04-14 01:37:16 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "new1@new.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 251ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 1036)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:37:51 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 950)
+
+
+Started DELETE "/logout" for ::1 at 2020-04-14 01:37:53 -0400
+Processing by SessionsController#logout as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 851)
+
+
+Started POST "/sessions" for ::1 at 2020-04-14 01:37:59 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "new1@new.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 253ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 1034)
+
+
+Started DELETE "/logout" for ::1 at 2020-04-14 01:38:02 -0400
+Processing by SessionsController#logout as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 849)
+
+
+Started POST "/sessions" for ::1 at 2020-04-14 01:38:21 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "new1@new.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 264ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 1034)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:38:41 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 949)
+
+
+Started DELETE "/logout" for ::1 at 2020-04-14 01:38:43 -0400
+Processing by SessionsController#logout as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 854)
+
+
+Started POST "/sessions" for ::1 at 2020-04-14 01:38:49 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "new1@new.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 261ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 1032)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:40:25 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 946)
+
+
+Started DELETE "/logout" for ::1 at 2020-04-14 01:40:27 -0400
+Processing by SessionsController#logout as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 851)
+
+
+Started POST "/sessions" for ::1 at 2020-04-14 01:40:34 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "new1@new.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 260ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 1036)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 01:45:41 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 951)
+
+
+Started GET "/usstates" for ::1 at 2020-04-14 01:53:36 -0400
+Processing by UsstatesController#index as HTML
+  [1m[36mUsstate Load (0.8ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/controllers/usstates_controller.rb:9:in `index'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 6.7ms | Allocations: 10948)
+
+
+  
+NoMethodError (undefined method `ceus' for #<Usstate:0x00007fee4f60c418>):
+  
+app/controllers/usstates_controller.rb:9:in `index'
+Started GET "/logged_in" for ::1 at 2020-04-14 01:59:12 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 1.0ms | Allocations: 1060)
+
+
+Started GET "/logged_in" for ::1 at 2020-04-14 02:01:17 -0400
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 949)
+
+
+Started DELETE "/logout" for ::1 at 2020-04-14 02:01:20 -0400
+Processing by SessionsController#logout as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 851)
+
+
+Started GET "/usstates" for ::1 at 2020-04-14 02:10:28 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 02:10:28 -0400
+Processing by UsstatesController#index as */*
+  [1m[36mUsstate Load (0.9ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/controllers/usstates_controller.rb:9:in `index'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.9ms | Allocations: 4203)
+
+
+  
+NoMethodError (undefined method `ceus' for #<Usstate:0x00007fee503ac348>):
+  
+app/controllers/usstates_controller.rb:9:in `index'
+Processing by SessionsController#logged_in as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 310)
+
+
+Started POST "/sessions" for ::1 at 2020-04-14 02:10:37 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "new1@new.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 261ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 1060)
+
+
+Started GET "/usstates" for ::1 at 2020-04-14 02:14:21 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 02:14:21 -0400
+Processing by UsstatesController#index as HTML
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUsstate Load (2.0ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/controllers/usstates_controller.rb:9:in `index'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 2.0ms | Allocations: 4399)
+
+
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 7.6ms | Allocations: 5671)
+
+
+  
+NoMethodError (undefined method `ceus' for #<Usstate:0x00007fee50c4d808>):
+  
+app/controllers/usstates_controller.rb:9:in `index'
+Started GET "/usstates" for ::1 at 2020-04-14 02:15:45 -0400
+Processing by UsstatesController#index as HTML
+Started GET "/logged_in" for ::1 at 2020-04-14 02:15:45 -0400
+  [1m[36mUsstate Load (1.5ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/controllers/usstates_controller.rb:9:in `index'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.5ms | Allocations: 5055)
+
+
+  
+NoMethodError (undefined method `ceus' for #<Usstate:0x00007fee4fe002a0>):
+  
+app/controllers/usstates_controller.rb:9:in `index'
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 1808)
+
+
+Started GET "/usstates" for ::1 at 2020-04-14 02:17:55 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 02:17:55 -0400
+Processing by UsstatesController#index as HTML
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUsstate Load (0.8ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/controllers/usstates_controller.rb:9:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.8ms | Allocations: 4398)
+
+
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+  
+NoMethodError (undefined method `ceus' for #<Usstate:0x00007fee538b5ee0>):
+  
+app/controllers/usstates_controller.rb:9:in `index'
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 5592)
+
+
+Started GET "/usstates" for ::1 at 2020-04-14 02:18:51 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 02:18:51 -0400
+Processing by UsstatesController#index as HTML
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUsstate Load (2.0ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/controllers/usstates_controller.rb:9:in `index'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.0ms | Allocations: 4370)
+
+
+  [1m[36mUser Load (11.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  
+NoMethodError (undefined method `ceus' for #<Usstate:0x00007fee4fb95da8>):
+  
+app/controllers/usstates_controller.rb:9:in `index'
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 220ms (Views: 0.5ms | ActiveRecord: 11.4ms | Allocations: 180882)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 02:19:41 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 02:19:41 -0400
+Processing by UsstatesController#index as JSON
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUsstate Load (0.7ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/controllers/usstates_controller.rb:9:in `index'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.7ms | Allocations: 4403)
+
+
+  
+NoMethodError (undefined method `ceus' for #<Usstate:0x00007fee5039ce48>):
+  
+app/controllers/usstates_controller.rb:9:in `index'
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 1.1ms | Allocations: 6151)
+
+
+Started GET "/usstates" for ::1 at 2020-04-14 02:19:51 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 02:19:51 -0400
+Processing by UsstatesController#index as HTML
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUsstate Load (1.1ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+  ↳ app/controllers/usstates_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 1442)
+
+
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.1ms | Allocations: 5093)
+
+
+  
+NoMethodError (undefined method `ceus' for #<Usstate:0x00007fee5040c400>):
+  
+app/controllers/usstates_controller.rb:9:in `index'
+Started GET "/usstates" for ::1 at 2020-04-14 02:20:05 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 02:20:05 -0400
+Processing by SessionsController#logged_in as HTML
+Processing by UsstatesController#index as HTML
+  Rendering usstates/index.html.erb within layouts/application
+  [1m[36mUsstate Load (1.5ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.html.erb:18
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 28ms (Views: 0.6ms | ActiveRecord: 14.2ms | Allocations: 8409)
+
+
+  Rendered usstates/index.html.erb within layouts/application (Duration: 56.8ms | Allocations: 17479)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/johnnichol/Desktop/GA_Final_Project/authentication_app/public/packs
+[Webpacker] Hash: 32e57f147dbdcbbf0c82
+Version: webpack 4.42.1
+Time: 2375ms
+Built at: 04/14/2020 2:20:10 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bbe9c4a129ab949e0636.js    124 KiB  application  [emitted] [immutable]  application
+js/application-bbe9c4a129ab949e0636.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-bbe9c4a129ab949e0636.js js/application-bbe9c4a129ab949e0636.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 5223ms (Views: 5185.4ms | ActiveRecord: 33.3ms | Allocations: 51319)
+
+
+Started GET "/usstates" for ::1 at 2020-04-14 07:55:44 -0400
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsstatesController#index as HTML
+  [1m[36mUsstate Load (5.0ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/controllers/usstates_controller.rb:9:in `index'
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 13.9ms | Allocations: 11398)
+
+
+  
+NoMethodError (undefined method `ceus' for #<Usstate:0x00007f9a211f1e50>):
+  
+app/controllers/usstates_controller.rb:9:in `index'
+Started GET "/" for ::1 at 2020-04-14 07:55:52 -0400
+Processing by StaticController#home as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 382)
+
+
+Started GET "/usstates" for ::1 at 2020-04-14 07:55:59 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 07:55:59 -0400
+Processing by UsstatesController#index as HTML
+  [1m[36mUsstate Load (0.3ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/controllers/usstates_controller.rb:9:in `index'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms | Allocations: 4180)
+
+
+  
+NoMethodError (undefined method `ceus' for #<Usstate:0x00007f9a2137a948>):
+  
+app/controllers/usstates_controller.rb:9:in `index'
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 8.5ms | Allocations: 21202)
+
+
+Started DELETE "/logout" for ::1 at 2020-04-14 07:56:01 -0400
+Processing by SessionsController#logout as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 900)
+
+
+Started GET "/usstates" for ::1 at 2020-04-14 08:01:30 -0400
+Processing by UsstatesController#index as HTML
+  [1m[36mUsstate Load (0.4ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/controllers/usstates_controller.rb:9:in `index'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms | Allocations: 4257)
+
+
+  
+NoMethodError (undefined method `ceus' for #<Usstate:0x00007f9a1febda28>):
+  
+app/controllers/usstates_controller.rb:9:in `index'
+Started GET "/usstates" for ::1 at 2020-04-14 08:02:06 -0400
+Processing by UsstatesController#index as HTML
+  Rendering usstates/index.html.erb within layouts/application
+  [1m[36mUsstate Load (0.4ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.html.erb:18
+  Rendered usstates/index.html.erb within layouts/application (Duration: 20.7ms | Allocations: 13169)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 43.3ms | ActiveRecord: 3.0ms | Allocations: 22944)
+
+
+Started POST "/sessions" for ::1 at 2020-04-14 08:02:41 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"new1@new.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "new1@new.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 200 OK in 255ms (Views: 0.4ms | ActiveRecord: 2.3ms | Allocations: 4549)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:04:02 -0400
+Processing by UsstatesController#index as JSON
+Started GET "/logged_in" for ::1 at 2020-04-14 08:04:02 -0400
+  Rendering usstates/index.json.jbuilder
+  [1m[36mUsstate Load (0.4ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.8ms | Allocations: 200)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+Processing by SessionsController#logged_in as HTML
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.5ms | Allocations: 1994)
+
+
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 44.1ms | Allocations: 21233)
+Completed 200 OK in 49ms (Views: 46.9ms | ActiveRecord: 0.4ms | Allocations: 23565)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:10:28 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:10:28 -0400
+Processing by SessionsController#logged_in as HTML
+Processing by UsstatesController#index as JSON
+  Rendering usstates/index.json.jbuilder
+  [1m[36mUsstate Load (1.0ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/usstates/index.json.jbuilder:1
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 103)
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 2978)
+
+
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.7ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 1.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 5.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 56.3ms | Allocations: 18248)
+Completed 200 OK in 58ms (Views: 56.2ms | ActiveRecord: 1.0ms | Allocations: 18621)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:11:17 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:11:17 -0400
+Processing by UsstatesController#index as JSON
+Processing by SessionsController#logged_in as HTML
+  Rendering usstates/index.json.jbuilder
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+  [1m[36mUsstate Load (1.4ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 1037)
+
+
+  ↳ app/views/usstates/index.json.jbuilder:1
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 103)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 1.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.8ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 64.8ms | Allocations: 18096)
+Completed 200 OK in 66ms (Views: 64.6ms | ActiveRecord: 1.4ms | Allocations: 18733)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:11:45 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:11:45 -0400
+Processing by UsstatesController#index as JSON
+Processing by SessionsController#logged_in as HTML
+  Rendering usstates/index.json.jbuilder
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 1041)
+
+
+  [1m[36mUsstate Load (1.6ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 103)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.7ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.7ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 1.7ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 52.1ms | Allocations: 18094)
+Completed 200 OK in 54ms (Views: 51.8ms | ActiveRecord: 1.6ms | Allocations: 18733)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:13:17 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:13:17 -0400
+Processing by UsstatesController#index as JSON
+  Rendering usstates/index.json.jbuilder
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUsstate Load (1.3ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 103)
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 2576)
+
+
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.6ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.6ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 38.6ms | Allocations: 18748)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 1.3ms | Allocations: 19114)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:14:16 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:14:16 -0400
+Processing by UsstatesController#index as JSON
+Processing by SessionsController#logged_in as HTML
+  Rendering usstates/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.6ms | Allocations: 1042)
+
+
+  [1m[36mUsstate Load (2.7ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 103)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.7ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 40.3ms | Allocations: 18098)
+Completed 200 OK in 42ms (Views: 39.3ms | ActiveRecord: 2.7ms | Allocations: 18739)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:15:47 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:15:47 -0400
+Processing by UsstatesController#index as JSON
+  Rendering usstates/index.json.jbuilder
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 995)
+
+
+  [1m[36mUsstate Load (7.6ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 103)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 1.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.6ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.7ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 57.4ms | Allocations: 18587)
+Completed 200 OK in 59ms (Views: 51.0ms | ActiveRecord: 7.6ms | Allocations: 18944)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:16:02 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:16:02 -0400
+Processing by UsstatesController#index as JSON
+  Rendering usstates/index.json.jbuilder
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUsstate Load (1.0ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 103)
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 2579)
+
+
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.7ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.7ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 69.0ms | Allocations: 18750)
+Completed 200 OK in 70ms (Views: 68.7ms | ActiveRecord: 1.0ms | Allocations: 19115)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:16:49 -0400
+Processing by UsstatesController#index as JSON
+Started GET "/logged_in" for ::1 at 2020-04-14 08:16:49 -0400
+  Rendering usstates/index.json.jbuilder
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUsstate Load (1.4ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 103)
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 2573)
+
+
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 3.7ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 43.0ms | Allocations: 18745)
+Completed 200 OK in 46ms (Views: 43.8ms | ActiveRecord: 1.4ms | Allocations: 19249)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:17:32 -0400
+Processing by UsstatesController#index as JSON
+  Rendering usstates/index.json.jbuilder
+Started GET "/logged_in" for ::1 at 2020-04-14 08:17:32 -0400
+  [1m[36mUsstate Load (0.8ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 103)
+Processing by SessionsController#logged_in as HTML
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.2ms | Allocations: 1463)
+
+
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.6ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 44.3ms | Allocations: 18905)
+Completed 200 OK in 47ms (Views: 45.4ms | ActiveRecord: 0.8ms | Allocations: 20097)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:17:49 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:17:49 -0400
+Processing by UsstatesController#index as JSON
+Processing by SessionsController#logged_in as HTML
+  Rendering usstates/index.json.jbuilder
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 1046)
+
+
+  [1m[36mUsstate Load (2.8ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 103)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.6ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 1.0ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 53.6ms | Allocations: 18097)
+Completed 200 OK in 56ms (Views: 53.0ms | ActiveRecord: 2.8ms | Allocations: 18733)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:17:59 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:17:59 -0400
+Processing by UsstatesController#index as JSON
+  Rendering usstates/index.json.jbuilder
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUsstate Load (1.2ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  ↳ app/views/usstates/index.json.jbuilder:1
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 103)
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 2598)
+
+
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.7ms | Allocations: 139)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 37.4ms | Allocations: 18588)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 1.2ms | Allocations: 19114)
+
+
+Started GET "/usstates.json" for ::1 at 2020-04-14 08:18:36 -0400
+Started GET "/logged_in" for ::1 at 2020-04-14 08:18:36 -0400
+Processing by UsstatesController#index as JSON
+  Rendering usstates/index.json.jbuilder
+Processing by SessionsController#logged_in as HTML
+  [1m[36mUsstate Load (0.7ms)[0m  [1m[34mSELECT "usstates".* FROM "usstates"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/usstates/index.json.jbuilder:1
+  ↳ app/controllers/concerns/current_user_concern.rb:10:in `set_current_user'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 2428)
+
+
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 103)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 1.6ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.5ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.4ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.3ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.2ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.1ms | Allocations: 93)
+  Rendered usstates/_usstate.json.jbuilder (Duration: 0.7ms | Allocations: 93)
+  Rendered usstates/index.json.jbuilder (Duration: 41.6ms | Allocations: 18381)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.7ms | Allocations: 19105)
+
+

@@ -1,0 +1,47 @@
+<%= form_with(model: ceu, local: true) do |form| %>
+  <% if ceu.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ceu.errors.count, "error") %> prohibited this ceu from being saved:</h2>
+
+      <ul>
+        <% ceu.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :number %>
+    <%= form.text_field :number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hours %>
+    <%= form.text_field :hours %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.text_field :state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :instructor_name %>
+    <%= form.text_field :instructor_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :provider_name %>
+    <%= form.text_field :provider_name %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

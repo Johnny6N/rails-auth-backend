@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :maps
+  resources :ceus
+  resources :clients
+  resources :usstates
   resources :sessions, only: [:create]
   resources :registrations, only: [:create]
   delete :logout, to: "sessions#logout"

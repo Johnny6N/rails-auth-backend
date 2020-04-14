@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>F name:</strong>
+  <%= @client.f_name %>
+</p>
+
+<p>
+  <strong>L name:</strong>
+  <%= @client.l_name %>
+</p>
+
+<p>
+  <strong>Birth month:</strong>
+  <%= @client.birth_month %>
+</p>
+
+<p>
+  <strong>Birth day:</strong>
+  <%= @client.birth_day %>
+</p>
+
+<p>
+  <strong>Birth year:</strong>
+  <%= @client.birth_year %>
+</p>
+
+<p>
+  <strong>License:</strong>
+  <%= @client.license %>
+</p>
+
+<%= link_to 'Edit', edit_client_path(@client) %> |
+<%= link_to 'Back', clients_path %>

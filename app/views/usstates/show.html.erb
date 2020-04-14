@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @usstate.name %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <%= @usstate.hours %>
+</p>
+
+<p>
+  <strong>Periodicity:</strong>
+  <%= @usstate.periodicity %>
+</p>
+
+<p>
+  <strong>Conditions:</strong>
+  <%= @usstate.conditions %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @usstate.link %>
+</p>
+
+<%= link_to 'Edit', edit_usstate_path(@usstate) %> |
+<%= link_to 'Back', usstates_path %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @ceu.title %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @ceu.number %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <%= @ceu.hours %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @ceu.state %>
+</p>
+
+<p>
+  <strong>Instructor name:</strong>
+  <%= @ceu.instructor_name %>
+</p>
+
+<p>
+  <strong>Provider name:</strong>
+  <%= @ceu.provider_name %>
+</p>
+
+<%= link_to 'Edit', edit_ceu_path(@ceu) %> |
+<%= link_to 'Back', ceus_path %>
