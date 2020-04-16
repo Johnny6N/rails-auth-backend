@@ -6,7 +6,7 @@ class CeusController < ApplicationController
   def index
     @ceus = Ceu.all
 
-    render json: @ceus.to_json(include: [:clients, :usstates])
+    # render json: @ceus.to_json(include: [:clients, :usstates])
   end
 
   # GET /ceus/1

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_14_043941) do
+ActiveRecord::Schema.define(version: 2020_04_16_230655) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,14 +38,14 @@ ActiveRecord::Schema.define(version: 2020_04_14_043941) do
   end
 
   create_table "maps", force: :cascade do |t|
-    t.bigint "clients_id", null: false
-    t.bigint "usstates_id", null: false
-    t.bigint "ceus_id", null: false
+    t.bigint "client_id", null: false
+    t.bigint "usstate_id", null: false
+    t.bigint "ceu_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["ceus_id"], name: "index_maps_on_ceus_id"
-    t.index ["clients_id"], name: "index_maps_on_clients_id"
-    t.index ["usstates_id"], name: "index_maps_on_usstates_id"
+    t.index ["ceu_id"], name: "index_maps_on_ceu_id"
+    t.index ["client_id"], name: "index_maps_on_client_id"
+    t.index ["usstate_id"], name: "index_maps_on_usstate_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -65,7 +65,7 @@ ActiveRecord::Schema.define(version: 2020_04_14_043941) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "maps", "ceus", column: "ceus_id"
-  add_foreign_key "maps", "clients", column: "clients_id"
-  add_foreign_key "maps", "usstates", column: "usstates_id"
+  add_foreign_key "maps", "ceus"
+  add_foreign_key "maps", "clients"
+  add_foreign_key "maps", "usstates"
 end
